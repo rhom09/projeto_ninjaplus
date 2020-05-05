@@ -6,14 +6,13 @@ namespace ninjaplus.Tests
 {
     public class OnAirTest
     {
-        [SetUp]
-        public void ShouldBeHaveTitle()
-        {
-        }
 
-        [Test]
-        public void Test1()
+        public BrowserSession browser;
+
+        [SetUp]
+        public void Setup()
         {
+
             var configs = new SessionConfiguration
             {
                 AppHost = "http://ninjaplus-web",
@@ -23,11 +22,19 @@ namespace ninjaplus.Tests
                 Browser = Coypu.Drivers.Browser.Chrome
             };
 
-            var browser = new BrowserSession(configs);
+            browser = new BrowserSession(configs);
+        }
 
+        [Test]
+        public void ShouldBeHaveTitle()
+        {
             browser.Visit("/login");
-
             Assert.AreEqual("Ninja+", browser.Title);
+        }
+
+        [TearDown]
+        public void Finish()
+        {
             browser.Dispose();
         }
     }
