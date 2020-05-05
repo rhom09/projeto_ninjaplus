@@ -2,7 +2,7 @@ using NUnit.Framework;
 using Coypu;
 using Coypu.Drivers.Selenium;
 
-namespace ninjaplus_net
+namespace ninjaplus.Tests
 {
     public class OnAirTest
     {
