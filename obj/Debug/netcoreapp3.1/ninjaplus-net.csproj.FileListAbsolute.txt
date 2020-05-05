@@ -94,3 +94,5 @@
 /home/rhom09/qaninja/ninjaplus-net/obj/Debug/netcoreapp3.1/ninjaplus-net.dll
 /home/rhom09/qaninja/ninjaplus-net/obj/Debug/netcoreapp3.1/ninjaplus-net.pdb
 /home/rhom09/qaninja/ninjaplus-net/obj/Debug/netcoreapp3.1/ninjaplus-net.genruntimeconfig.cache
+/home/rhom09/qaninja/ninjaplus-net/bin/Debug/netcoreapp3.1/Coypu.dll
+/home/rhom09/qaninja/ninjaplus-net/bin/Debug/netcoreapp3.1/WebDriver.dll
